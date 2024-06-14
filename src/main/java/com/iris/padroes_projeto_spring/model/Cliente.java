@@ -1,11 +1,10 @@
 package com.iris.padroes_projeto_spring.model;
 
-
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 
 @Entity
@@ -16,7 +15,7 @@ public class Cliente {
 	private Long id;
 	private String nome;
 	
-	
+	@ManyToOne
 	private Endereco endereco;
 
 
@@ -48,8 +47,6 @@ public class Cliente {
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
-	
-	
-	
+
 
 }

@@ -3,10 +3,9 @@ package com.iris.padroes_projeto_spring.model;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 
 
 /***
@@ -31,94 +30,84 @@ public class Endereco {
 	private String gia;
 	private String ddd;
 	private String siafi;
-	private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
 	public String getCep() {
-	return cep;
+		return cep;
 	}
 
 	public void setCep(String cep) {
-	this.cep = cep;
+		this.cep = cep;
 	}
 
 	public String getLogradouro() {
-	return logradouro;
+		return logradouro;
 	}
 
 	public void setLogradouro(String logradouro) {
-	this.logradouro = logradouro;
+		this.logradouro = logradouro;
 	}
 
 	public String getComplemento() {
-	return complemento;
+		return complemento;
 	}
 
 	public void setComplemento(String complemento) {
-	this.complemento = complemento;
+		this.complemento = complemento;
 	}
 
 	public String getBairro() {
-	return bairro;
+		return bairro;
 	}
 
 	public void setBairro(String bairro) {
-	this.bairro = bairro;
+		this.bairro = bairro;
 	}
 
 	public String getLocalidade() {
-	return localidade;
+		return localidade;
 	}
 
 	public void setLocalidade(String localidade) {
-	this.localidade = localidade;
+		this.localidade = localidade;
 	}
 
 	public String getUf() {
-	return uf;
+		return uf;
 	}
 
 	public void setUf(String uf) {
-	this.uf = uf;
+		this.uf = uf;
 	}
 
 	public String getIbge() {
-	return ibge;
+		return ibge;
 	}
 
 	public void setIbge(String ibge) {
-	this.ibge = ibge;
+		this.ibge = ibge;
 	}
 
 	public String getGia() {
-	return gia;
+		return gia;
 	}
 
 	public void setGia(String gia) {
-	this.gia = gia;
+		this.gia = gia;
 	}
 
 	public String getDdd() {
-	return ddd;
+		return ddd;
 	}
 
 	public void setDdd(String ddd) {
-	this.ddd = ddd;
+		this.ddd = ddd;
 	}
 
 	public String getSiafi() {
-	return siafi;
+		return siafi;
 	}
 
 	public void setSiafi(String siafi) {
-	this.siafi = siafi;
+		this.siafi = siafi;
 	}
-
-	public Map<String, Object> getAdditionalProperties() {
-	return this.additionalProperties;
-	}
-
-	public void setAdditionalProperty(String name, Object value) {
-	this.additionalProperties.put(name, value);
-	}
-
 }
